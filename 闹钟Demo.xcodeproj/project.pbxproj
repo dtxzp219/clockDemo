@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F9566151D7205FB0077BE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9566141D7205FB0077BE1F /* main.m */; };
+		1F9566181D7205FB0077BE1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9566171D7205FB0077BE1F /* AppDelegate.m */; };
+		1F95661B1D7205FB0077BE1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F95661A1D7205FB0077BE1F /* ViewController.m */; };
+		1F95661E1D7205FB0077BE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F95661C1D7205FB0077BE1F /* Main.storyboard */; };
+		1F9566201D7205FB0077BE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F95661F1D7205FB0077BE1F /* Assets.xcassets */; };
+		1F9566231D7205FB0077BE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9566211D7205FB0077BE1F /* LaunchScreen.storyboard */; };
+		1F95662E1D7205FB0077BE1F /* __DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F95662D1D7205FB0077BE1F /* __DemoTests.m */; };
+		1F9566391D7205FB0077BE1F /* __DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9566381D7205FB0077BE1F /* __DemoUITests.m */; };
+		1F9566481D72079C0077BE1F /* ZPClockFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9566471D72079C0077BE1F /* ZPClockFaceView.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F95662A1D7205FB0077BE1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F9566081D7205FB0077BE1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F95660F1D7205FB0077BE1F;
+			remoteInfo = "闹钟Demo";
+		};
+		1F9566351D7205FB0077BE1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F9566081D7205FB0077BE1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F95660F1D7205FB0077BE1F;
+			remoteInfo = "闹钟Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F9566101D7205FB0077BE1F /* 闹钟Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "闹钟Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9566141D7205FB0077BE1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F9566161D7205FB0077BE1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F9566171D7205FB0077BE1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F9566191D7205FB0077BE1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F95661A1D7205FB0077BE1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F95661D1D7205FB0077BE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F95661F1D7205FB0077BE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F9566221D7205FB0077BE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F9566241D7205FB0077BE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9566291D7205FB0077BE1F /* 闹钟DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "闹钟DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F95662D1D7205FB0077BE1F /* __DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __DemoTests.m; sourceTree = "<group>"; };
+		1F95662F1D7205FB0077BE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9566341D7205FB0077BE1F /* 闹钟DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "闹钟DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9566381D7205FB0077BE1F /* __DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __DemoUITests.m; sourceTree = "<group>"; };
+		1F95663A1D7205FB0077BE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9566461D72079C0077BE1F /* ZPClockFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPClockFaceView.h; sourceTree = "<group>"; };
+		1F9566471D72079C0077BE1F /* ZPClockFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPClockFaceView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F95660D1D7205FB0077BE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9566261D7205FB0077BE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9566311D7205FB0077BE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F9566071D7205FB0077BE1F = {
+			isa = PBXGroup;
+			children = (
+				1F9566121D7205FB0077BE1F /* 闹钟Demo */,
+				1F95662C1D7205FB0077BE1F /* 闹钟DemoTests */,
+				1F9566371D7205FB0077BE1F /* 闹钟DemoUITests */,
+				1F9566111D7205FB0077BE1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F9566111D7205FB0077BE1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F9566101D7205FB0077BE1F /* 闹钟Demo.app */,
+				1F9566291D7205FB0077BE1F /* 闹钟DemoTests.xctest */,
+				1F9566341D7205FB0077BE1F /* 闹钟DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F9566121D7205FB0077BE1F /* 闹钟Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1F9566161D7205FB0077BE1F /* AppDelegate.h */,
+				1F9566171D7205FB0077BE1F /* AppDelegate.m */,
+				1F9566191D7205FB0077BE1F /* ViewController.h */,
+				1F95661A1D7205FB0077BE1F /* ViewController.m */,
+				1F9566461D72079C0077BE1F /* ZPClockFaceView.h */,
+				1F9566471D72079C0077BE1F /* ZPClockFaceView.m */,
+				1F95661C1D7205FB0077BE1F /* Main.storyboard */,
+				1F95661F1D7205FB0077BE1F /* Assets.xcassets */,
+				1F9566211D7205FB0077BE1F /* LaunchScreen.storyboard */,
+				1F9566241D7205FB0077BE1F /* Info.plist */,
+				1F9566131D7205FB0077BE1F /* Supporting Files */,
+			);
+			path = "闹钟Demo";
+			sourceTree = "<group>";
+		};
+		1F9566131D7205FB0077BE1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F9566141D7205FB0077BE1F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F95662C1D7205FB0077BE1F /* 闹钟DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F95662D1D7205FB0077BE1F /* __DemoTests.m */,
+				1F95662F1D7205FB0077BE1F /* Info.plist */,
+			);
+			path = "闹钟DemoTests";
+			sourceTree = "<group>";
+		};
+		1F9566371D7205FB0077BE1F /* 闹钟DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F9566381D7205FB0077BE1F /* __DemoUITests.m */,
+				1F95663A1D7205FB0077BE1F /* Info.plist */,
+			);
+			path = "闹钟DemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F95660F1D7205FB0077BE1F /* 闹钟Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F95663D1D7205FB0077BE1F /* Build configuration list for PBXNativeTarget "闹钟Demo" */;
+			buildPhases = (
+				1F95660C1D7205FB0077BE1F /* Sources */,
+				1F95660D1D7205FB0077BE1F /* Frameworks */,
+				1F95660E1D7205FB0077BE1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "闹钟Demo";
+			productName = "闹钟Demo";
+			productReference = 1F9566101D7205FB0077BE1F /* 闹钟Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F9566281D7205FB0077BE1F /* 闹钟DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9566401D7205FB0077BE1F /* Build configuration list for PBXNativeTarget "闹钟DemoTests" */;
+			buildPhases = (
+				1F9566251D7205FB0077BE1F /* Sources */,
+				1F9566261D7205FB0077BE1F /* Frameworks */,
+				1F9566271D7205FB0077BE1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F95662B1D7205FB0077BE1F /* PBXTargetDependency */,
+			);
+			name = "闹钟DemoTests";
+			productName = "闹钟DemoTests";
+			productReference = 1F9566291D7205FB0077BE1F /* 闹钟DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F9566331D7205FB0077BE1F /* 闹钟DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9566431D7205FB0077BE1F /* Build configuration list for PBXNativeTarget "闹钟DemoUITests" */;
+			buildPhases = (
+				1F9566301D7205FB0077BE1F /* Sources */,
+				1F9566311D7205FB0077BE1F /* Frameworks */,
+				1F9566321D7205FB0077BE1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F9566361D7205FB0077BE1F /* PBXTargetDependency */,
+			);
+			name = "闹钟DemoUITests";
+			productName = "闹钟DemoUITests";
+			productReference = 1F9566341D7205FB0077BE1F /* 闹钟DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F9566081D7205FB0077BE1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = zhang;
+				TargetAttributes = {
+					1F95660F1D7205FB0077BE1F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					1F9566281D7205FB0077BE1F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1F95660F1D7205FB0077BE1F;
+					};
+					1F9566331D7205FB0077BE1F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1F95660F1D7205FB0077BE1F;
+					};
+				};
+			};
+			buildConfigurationList = 1F95660B1D7205FB0077BE1F /* Build configuration list for PBXProject "闹钟Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F9566071D7205FB0077BE1F;
+			productRefGroup = 1F9566111D7205FB0077BE1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F95660F1D7205FB0077BE1F /* 闹钟Demo */,
+				1F9566281D7205FB0077BE1F /* 闹钟DemoTests */,
+				1F9566331D7205FB0077BE1F /* 闹钟DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F95660E1D7205FB0077BE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9566231D7205FB0077BE1F /* LaunchScreen.storyboard in Resources */,
+				1F9566201D7205FB0077BE1F /* Assets.xcassets in Resources */,
+				1F95661E1D7205FB0077BE1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9566271D7205FB0077BE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9566321D7205FB0077BE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F95660C1D7205FB0077BE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9566481D72079C0077BE1F /* ZPClockFaceView.m in Sources */,
+				1F95661B1D7205FB0077BE1F /* ViewController.m in Sources */,
+				1F9566181D7205FB0077BE1F /* AppDelegate.m in Sources */,
+				1F9566151D7205FB0077BE1F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9566251D7205FB0077BE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F95662E1D7205FB0077BE1F /* __DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9566301D7205FB0077BE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9566391D7205FB0077BE1F /* __DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F95662B1D7205FB0077BE1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F95660F1D7205FB0077BE1F /* 闹钟Demo */;
+			targetProxy = 1F95662A1D7205FB0077BE1F /* PBXContainerItemProxy */;
+		};
+		1F9566361D7205FB0077BE1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F95660F1D7205FB0077BE1F /* 闹钟Demo */;
+			targetProxy = 1F9566351D7205FB0077BE1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F95661C1D7205FB0077BE1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F95661D1D7205FB0077BE1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F9566211D7205FB0077BE1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F9566221D7205FB0077BE1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F95663B1D7205FB0077BE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F95663C1D7205FB0077BE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F95663E1D7205FB0077BE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "闹钟Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangpeng.--Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F95663F1D7205FB0077BE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "闹钟Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangpeng.--Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F9566411D7205FB0077BE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "闹钟DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangpeng.--DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/闹钟Demo.app/闹钟Demo";
+			};
+			name = Debug;
+		};
+		1F9566421D7205FB0077BE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "闹钟DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangpeng.--DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/闹钟Demo.app/闹钟Demo";
+			};
+			name = Release;
+		};
+		1F9566441D7205FB0077BE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "闹钟DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangpeng.--DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "闹钟Demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1F9566451D7205FB0077BE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "闹钟DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangpeng.--DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "闹钟Demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F95660B1D7205FB0077BE1F /* Build configuration list for PBXProject "闹钟Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F95663B1D7205FB0077BE1F /* Debug */,
+				1F95663C1D7205FB0077BE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F95663D1D7205FB0077BE1F /* Build configuration list for PBXNativeTarget "闹钟Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F95663E1D7205FB0077BE1F /* Debug */,
+				1F95663F1D7205FB0077BE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F9566401D7205FB0077BE1F /* Build configuration list for PBXNativeTarget "闹钟DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9566411D7205FB0077BE1F /* Debug */,
+				1F9566421D7205FB0077BE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F9566431D7205FB0077BE1F /* Build configuration list for PBXNativeTarget "闹钟DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9566441D7205FB0077BE1F /* Debug */,
+				1F9566451D7205FB0077BE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F9566081D7205FB0077BE1F /* Project object */;
+}
