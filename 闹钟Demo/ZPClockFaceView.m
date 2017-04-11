@@ -56,6 +56,8 @@
     
     CABasicAnimation *pathAnimation1 = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     pathAnimation1.duration = 3.0;
+    pathAnimation1.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+
     pathAnimation1.fromValue = [NSNumber numberWithFloat:0.01];
     pathAnimation1.toValue = [NSNumber numberWithFloat:1.0f];
     [layer1 addAnimation:pathAnimation1 forKey:nil];
@@ -79,6 +81,7 @@
     
     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     pathAnimation.duration = 3.0;
+    pathAnimation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pathAnimation.fromValue = [NSNumber numberWithFloat:0.01];
     pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
     [layer addAnimation:pathAnimation forKey:nil];
@@ -104,7 +107,7 @@
 
     
     CATextLayer *textLayer2=[CATextLayer layer];
-    textLayer2.frame=CGRectMake((self.frame.size.width-20)/2, self.frame.size.height-25, 20, 20);
+    textLayer2.frame=CGRectMake((self.frame.size.width)/2-10, self.frame.size.height-25, 20, 20);
     textLayer2.string=@"6";
     textLayer2.foregroundColor=[UIColor blackColor].CGColor;
     textLayer2.alignmentMode=kCAAlignmentJustified;
@@ -165,11 +168,35 @@
 }
 - (void)timeChange
 {
-    miaoShape.transform = CATransform3DMakeRotation(CURRENTSEC * kPerSecondA, 0, 0, 1);
-    minLayer.transform = CATransform3DMakeRotation(CURRENTMIN * kPerMinuteA, 0, 0, 1);
-    
-    hourLayer.transform = CATransform3DMakeRotation(CURRENTHOUR * kPerHourA, 0, 0, 1);
-    hourLayer.transform = CATransform3DMakeRotation(CURRENTMIN * kPerHourMinuteA + CURRENTHOUR*kPerHourA, 0, 0, 1);
-}
+    [self setAngle:CURRENTSEC * kPerSecondA forHand:miaoShape animated:YES];
+    [self setAngle:CURRENTMIN * kPerMinuteA forHand:minLayer animated:YES];
+    [self setAngle:CURRENTMIN * kPerHourMinuteA + CURRENTHOUR*kPerHourA forHand:hourLayer animated:YES];
 
+//    miaoShape.transform = CATransform3DMakeRotation(CURRENTSEC * kPerSecondA, 0, 0, 1);
+//    minLayer.transform = CATransform3DMakeRotation(CURRENTMIN * kPerMinuteA, 0, 0, 1);
+//    
+//    hourLayer.transform = CATransform3DMakeRotation(CURRENTHOUR * kPerHourA, 0, 0, 1);
+//    hourLayer.transform = CATransform3DMakeRotation(CURRENTMIN * kPerHourMinuteA + CURRENTHOUR*kPerHourA, 0, 0, 1);
+}
+- (void)setAngle:(CGFloat)angle forHand:(CALayer *)layer animated:(BOOL)animated
+{
+    //generate transform
+    CATransform3D transform = CATransform3DMakeRotation(angle, 0, 0, 1);
+    if (animated) {
+        //create transform animation
+        CABasicAnimation *animation = [CABasicAnimation animation];
+        animation.keyPath = @"transform";
+        animation.fromValue = [layer.presentationLayer valueForKey:@"transform"];
+        animation.toValue = [NSValue valueWithCATransform3D:transform];
+        animation.duration = 0.5;
+//        animation.delegate = self;
+        animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:1 :0 :0.75 :1];
+        //apply animation
+        layer.transform = transform;
+        [layer addAnimation:animation forKey:nil];
+    } else {
+        //set transform directly
+        layer.transform = transform;
+    }
+}
 @end
